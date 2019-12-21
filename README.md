@@ -9,8 +9,11 @@ This algorithm maintains two queues, one of the visited nodes and the other of t
 
 #### 1.2. Data structure
 **Main:** Dijkstra’s algorithm is implemented using priority queue data structure. The user is first asked to enter the path of the text file. The main class takes input from a text file using buffered reader and inputs it in a queue. It also asks the user to select either single-source shortest path or minimum spanning tree to be implemented on the provided file. Then it calculates and displays number of vertices, edges and type of graph, it requests for the source vertex in case of single source shortest path and sends it to graph function for calculating the paths.
+
 **Edge:** consists of strings v1 and v2 which store the end vertices of an edge and weight variable is used for storing weight of the edges.
-Graph: uses hash map for mapping vertex names to vertex objects built from the set of edges and thereby creates a graph for set of vertices passed by the main class. It also uses priority queue to store the vertices by adding v one by one. This function is also responsible for printing paths from source vertex to other vertices.
+
+**Graph:** uses hash map for mapping vertex names to vertex objects built from the set of edges and thereby creates a graph for set of vertices passed by the main class. It also uses priority queue to store the vertices by adding v one by one. This function is also responsible for printing paths from source vertex to other vertices.
+
 **Vertex:** this function is responsible for comparing costs and printing the least costing path between two vertices.
 
 #### 1.3. Runtime
@@ -28,8 +31,11 @@ For Kruskal’s algorithm is a greedy algorithm. In this algorithm, first, all t
 ####  2.2. Data structure
 
 **Main:** Dijkstra’s algorithm is implemented using priority queue data structure. The user is first asked to enter the path of the text file. The main class takes input from a text file using buffered reader and inputs it in a queue. It also asks the user to select either single-source shortest path or minimum spanning tree to be implemented on the provided file. Then it calculates and displays number of vertices, edges and type of graph, it requests for the source vertex in case of single source shortest path and sends it to graph function for calculating the paths.
+
 **Edge:** consists of strings v1 and v2 which store the end vertices of an edge and weight variable is used for storing weight of the edges.
+
 **Vertex:** this function is responsible for comparing costs and printing the least costing path between two vertices.
+
 **Kruskal:** The function uses hash maps for storing parent and rank information. The edges are sorted based on their edge weight. The edge with least weight is selected and put in an array list to form a set of edges after checking the formation of cycles. Once all the edges have been checked and the spanning tree consists of V-1 edges, the algorithm stops and prints are the edges that form the minimum spanning tree.
 
 #### 2.3. Runtime
