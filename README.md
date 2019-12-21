@@ -14,7 +14,7 @@ Graph: uses hash map for mapping vertex names to vertex objects built from the s
 **Vertex:** this function is responsible for comparing costs and printing the least costing path between two vertices.
 
 #### 1.3. Runtime
-O (E log V)
+O(E log V)
 
 #### 1.4. Instructions
 On running the program, it asks for a path to locate the file, so place the input file in a separate folder and pass the path, for example, C:\Users\saloni\Desktop\New folder\inputFile3.txt. Now, enter the option between Dijkstra’s (for single-source shortest path) and Kruskal’s algorithm (for minimum spanning tree). In case of Dijkstra’s it asks for source node to calculate the shortest paths. On entering the vertex, the output can be seen on the screen.
@@ -33,7 +33,7 @@ For Kruskal’s algorithm is a greedy algorithm. In this algorithm, first, all t
 **Kruskal:** The function uses hash maps for storing parent and rank information. The edges are sorted based on their edge weight. The edge with least weight is selected and put in an array list to form a set of edges after checking the formation of cycles. Once all the edges have been checked and the spanning tree consists of V-1 edges, the algorithm stops and prints are the edges that form the minimum spanning tree.
 
 #### 2.3. Runtime
-O (E log V)
+O(E log V) or O(E log E)
 
 #### 2.4. Instructions
 On running the program, it asks for a path to locate the file, so place the input file in a separate folder and pass the path, for example, C:\Users\saloni\Desktop\New folder\inputFile3.txt. Now, enter the option between Dijkstra’s (for single-source shortest path) and Kruskal’s algorithm (for minimum spanning tree). In case of Kruskal it prints the edges and cost on selecting the option.
